@@ -46,7 +46,10 @@ h3 {
 #headname {
 	background: #4aaaa5;
 	color: #ffffff;
-	padding: 15px 0;
+	padding: 15px 10px;
+    animation-name: header;
+    animation-duration: 4s;
+	animation-iteration-count: infinite;
 }
 
 .col-md-7 {
@@ -77,14 +80,13 @@ h3 {
 	overflow: auto;
 }
 
-
 .portimage {
-	margin: 25px 0 0 0;
+	margin: 25px 0 0 25px;
 }
 .portheader {
 	background-color: #4aaaa5;
 	width: 200px;
-	margin: 0 auto;
+	margin: 0 0 0 25px;
 	padding: 10px;
 }
 
@@ -93,6 +95,30 @@ h3 {
 	text-align: center;
 	text-decoration: none;
 	font-weight: normal;
+}
+
+a:hover {
+	text-decoration: none;
+	font-weight: bolder;
+}
+
+
+/* The animation code */
+@keyframes header {
+    0%   {background-color: #4aaaa5;}
+    25%  {background-color: #cccccc;}
+    50%  {background-color: #333333;}
+    75%	 {background-color: #666666;}
+    100% {background-color: #cccccc;}
+}
+
+
+
+button.btn {
+	background-color: #4aaaa5;
+	color: #ffffff;
+	padding: 10px 40px;
+	border-radius: 0;
 }
 
 /* footer */
